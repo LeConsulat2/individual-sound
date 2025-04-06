@@ -1,12 +1,13 @@
-numpy>=1.19.0
-torch>=1.9.0
-streamlit>=1.0.0,<1.27.0
+numpy==1.19.5
+torch==1.9.0
+streamlit==1.9.0         # ✅ tensorflow 2.5.0과 호환
 spleeter==2.3.0
-noisereduce>=2.0.0
-soundfile>=0.10.0
-tensorflow==2.10.0
-librosa>=0.8.0
-tqdm>=4.42.0
-setuptools>=49.0.0
-ffmpeg-python>=0.2.0
+noisereduce==2.0.1
+soundfile==0.10.3.post1
+tensorflow==2.5.0
+librosa==0.8.0
+tqdm==4.64.0
+setuptools==49.6.0
+ffmpeg-python==0.2.0
 protobuf==3.19.6
+typing-extensions==3.7.4.3   # ✅ 수동 고정 필요!
