@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# 환경
+env/
+.venv/
+
+# 모델, 체크포인트
+pretrained_models/
+*.ckpt
+*.h5
+*.pt
+*.tflite
+*.pb
+*.bin
+*.onnx
+*.meta
+
+# Streamlit 상태 파일
+.streamlit/*
+!.streamlit/config.toml
+# 기타
+.DS_Store
