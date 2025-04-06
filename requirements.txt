@@ -1,12 +1,12 @@
 numpy>=1.19.0
 torch>=1.9.0
-streamlit>=1.0.0,<1.27.0  # Using an earlier version that works with protobuf 3.19.6
-spleeter>=2.3.0
+streamlit>=1.0.0,<1.27.0
+spleeter==2.3.0
 noisereduce>=2.0.0
 soundfile>=0.10.0
-tensorflow>=2.0.0
+tensorflow==2.10.0
 librosa>=0.8.0
 tqdm>=4.42.0
 setuptools>=49.0.0
 ffmpeg-python>=0.2.0
-protobuf==3.19.6  # Keep the specific version you already have
+protobuf==3.19.6
