@@ -1,10 +1,8 @@
-# Core dependencies with compatible versions for Python 3.9
 numpy==1.22.4
 pandas==1.4.3
 protobuf==3.19.6
-streamlit==1.22.0
-click==8.0.4
-typer==0.7.0
+click==7.1.2
+typer==0.3.2
 spleeter==2.4.0
 noisereduce==2.0.1
 soundfile==0.12.1
@@ -12,9 +10,8 @@ ffmpeg-python==0.2.0
 tensorflow==2.9.3
 librosa==0.9.2
 tqdm==4.66.1
-
-# Additional dependencies that might be needed for full compatibility
 matplotlib==3.5.2
 scipy==1.8.1
+streamlit==1.22.0
 setuptools==65.5.1
 wheel==0.38.4
