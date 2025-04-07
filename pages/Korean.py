@@ -126,7 +126,7 @@ def main():
     
     # 파일 크기 제한 (44.1kHz 스테레오 오디오 15분 ≈ 15MB)
     # 계산: 44100 samples/sec * 2 채널 * 2 bytes/sample * 60 sec/min * 15 min ≈ 158MB
-    max_file_size = 158 * 1024 * 1024  # 158MB
+    max_file_size = 500  * 1024 * 1024  # 158MB
     
     # 출력 파일을 위한 임시 디렉토리 생성
     temp_output_dir = tempfile.mkdtemp()
