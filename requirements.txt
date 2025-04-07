@@ -1,13 +1,22 @@
+# Core scientific stack
+numpy==1.19.5              # compatible with tensorflow 2.5.0 and spleeter
+pandas==1.4.4              # if needed, works with numpy 1.19.5
 
-numpy>=1.19.0
-torch>=1.9.0
-streamlit>=1.0.0,<1.27.0  # Using an earlier version that works with protobuf 3.19.6
-spleeter>=2.3.0
-noisereduce>=2.0.0
-soundfile>=0.10.0
-tensorflow>=2.0.0
-librosa>=0.8.0
-tqdm>=4.42.0
-setuptools>=49.0.0
-ffmpeg-python>=0.2.0
-protobuf==3.19.6  # Keep the specific version you already have
+# Machine learning and audio processing
+tensorflow==2.5.0          # required by spleeter 2.3.0
+torch==1.9.0               # compatible with numpy 1.19.5
+spleeter==2.3.0            # requires tensorflow==2.5.0
+librosa==0.8.0             # supports numpy 1.19.5
+noisereduce==2.0.1         # avoid >=3.x due to numpy version
+soundfile==0.10.3.post1
+
+# Streamlit and UI
+streamlit==1.9.0           # compatible with older protobuf and typing-extensions
+typing-extensions==3.7.4.3 # required by tensorflow 2.5.0 and torch 1.9.0
+
+# Utilities
+tqdm==4.64.0
+setuptools==49.6.0
+protobuf==3.19.6           # required to avoid crash with tensorflow
+ffmpeg-python==0.2.0
+jsonschema==4.17.3         # optional, but needed by altair (used internally by streamlit)
