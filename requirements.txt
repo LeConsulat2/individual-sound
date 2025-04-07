@@ -1,22 +1,25 @@
-# Core scientific stack
-numpy==1.19.5              # compatible with tensorflow 2.5.0 and spleeter
-pandas==1.4.4              # if needed, works with numpy 1.19.5
+# Core web framework
+streamlit>=1.28.0,<1.35.0
 
-# Machine learning and audio processing
-tensorflow==2.5.0          # required by spleeter 2.3.0
-torch==1.9.0               # compatible with numpy 1.19.5
-spleeter==2.3.0            # requires tensorflow==2.5.0
-librosa==0.8.0             # supports numpy 1.19.5
-noisereduce==2.0.1         # avoid >=3.x due to numpy version
-soundfile==0.10.3.post1
+# Numerical and scientific computing
+numpy>=1.22.0,<1.27.0  # Ensure compatibility with TF and others
+scipy>=1.8.0,<1.13.0
 
-# Streamlit and UI
-streamlit==1.9.0           # compatible with older protobuf and typing-extensions
-typing-extensions==3.7.4.3 # required by tensorflow 2.5.0 and torch 1.9.0
+# Audio processing
+librosa>=0.9.0,<0.11.0
+soundfile>=0.11.0,<0.13.0
+noisereduce>=2.0.0,<3.1.0
 
-# Utilities
-tqdm==4.64.0
-setuptools==49.6.0
-protobuf==3.19.6           # required to avoid crash with tensorflow
-ffmpeg-python==0.2.0
-jsonschema==4.17.3         # optional, but needed by altair (used internally by streamlit)
+# Deep Learning Backend for Spleeter (TensorFlow is common)
+# Spleeter 2.4 often works well with TF 2.10
+tensorflow>=2.10.0,<2.11.0
+# OR if you know you need CPU-only tensorflow:
+# tensorflow-cpu>=2.10.0,<2.11.0
+
+# Stem Separation library
+spleeter>=2.4.0,<2.5.0
+
+# Other utilities (likely installed as dependencies, but good to list)
+protobuf<4.0.0 # Often needed for TensorFlow compatibility issues
+requests
+packaging
