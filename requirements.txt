@@ -2,17 +2,17 @@ numpy==1.19.5
 pandas==1.4.4
 referencing==0.30.0
 torch==1.9.0
-streamlit==1.18.0
+streamlit==1.9.0
+altair==4.2.2
 spleeter==2.3.0
 noisereduce==2.0.1
 soundfile==0.10.3.post1
-tensorflow==2.10.0          # ✅ 충돌 없이 안정 작동
+tensorflow==2.5.0
 librosa==0.8.0
 tqdm==4.64.0
 setuptools==49.6.0
 ffmpeg-python==0.2.0
 protobuf==3.19.6
-typing-extensions==4.13.1   # ✅ 최신 Streamlit 호환
-six==1.17.0
+typing-extensions==3.7.4.3
+six==1.15.0
 jsonschema==4.17.3
-altair==4.2.2
