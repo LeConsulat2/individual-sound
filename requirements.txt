@@ -2,7 +2,7 @@ numpy==1.19.5
 pandas==1.4.4
 referencing==0.30.0
 torch==1.9.0
-streamlit==1.18.0         # ✅ 멀티페이지 지원 + tensorflow 2.5.0과 호환
+streamlit==1.18.0         # ✅ 멀티페이지 지원
 spleeter==2.3.0
 noisereduce==2.0.1
 soundfile==0.10.3.post1
@@ -13,4 +13,5 @@ setuptools==49.6.0
 ffmpeg-python==0.2.0
 protobuf==3.19.6
 typing-extensions==3.7.4.3
+six==1.15.0
 jsonschema==4.17.3
