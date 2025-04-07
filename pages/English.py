@@ -126,7 +126,7 @@ def main():
     
     # File size limit (15 minutes of stereo audio at 44.1kHz ≈ 15MB)
     # Calculate: 44100 samples/sec * 2 channels * 2 bytes/sample * 60 sec/min * 15 min ≈ 158MB
-    max_file_size = 500  * 1024 * 1024  # 158MB
+    max_file_size = 150  * 1024 * 1024  # 158MB
     
     # Create a temporary directory for output files
     temp_output_dir = tempfile.mkdtemp()
